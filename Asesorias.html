@@ -1,0 +1,236 @@
+<html lang="es"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Informativa</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,300;0,700;1,300&display=swap');
+        /* Estilos generales */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            
+        }
+        
+        /* Contenedor principal */
+        .custom-banner-container {
+            width: 100%;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        
+        /* Banner con imagen */
+        .banner {
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .banner img {
+            width: 100%;
+            height: auto;
+            display: block;
+             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+        margin-bottom: 20px; /* Espacio para la sombra */
+
+        }
+        
+        
+        /* Contenido principal */
+        .content {
+            max-width: 1140px;
+            width: 95%;
+            margin: 30px auto;
+            padding: 40px;
+            background: #000000;
+            border-radius: 10px;
+            
+        }
+        
+        .elementor-section {
+            padding: 15px 0;
+            background-color: #fff;
+        }
+        
+        .content p {
+            line-height: 1.6;
+            color: #ffffff;
+            text-align: justify;
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+        
+        /* Estilos para el botón */
+       .submit-btn {
+            background-color: #EA0D00;
+            color: white;
+            border: none;
+            padding: 18px 45px; 
+            font-size: 24px; 
+            border-radius: 4px;
+            cursor: pointer;
+            display: block;
+            margin: 40px auto 0;
+            transition: all 0.3s ease;
+            font-family: 'Bebas Neue', sans-serif;
+            letter-spacing: 3px;
+            width: auto;
+            min-width: 220px;
+        }
+        
+        .submit-btn:hover {
+            background-color: #ff0d25;
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(234, 13, 0, 0.5);
+        }
+        
+          .custom-list {
+    list-style: none;
+    padding-left: 50px;
+  }
+  
+  .custom-list li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    line-height: 1.6;
+            color: #ffffff;
+            text-align: justify;
+            font-size: 20px;
+  }
+  
+  .custom-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 50px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M9 18L15 12L9 6' stroke='%23ff0d25' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+        
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        
+         @media (max-width: 768px) {
+           
+            .content {
+            width: 95%;  /* Más margen en los lados */
+            padding: 15px 15px;  /* Menos padding interno */
+            margin: 20px auto;  /* Espaciado superior/inferior reducido */
+            }
+            
+             .content p {
+            font-size: 17px;  /* Un poco más pequeño para móvil */
+            margin-left: 5px !important;  /* Override del inline style */
+            margin-right: 5px !important;  /* Override del inline style */
+            margin-bottom: 30px;
+        }
+        
+     
+    .submit-btn {
+        padding: 14px 30px; /* Reducción del 25% aprox */
+        font-size: 20px; /* Tamaño de fuente más adecuado */
+        margin: 30px auto 0; /* Menos margen superior */
+        min-width: 180px; /* Ancho mínimo reducido */
+        letter-spacing: 2px; /* Espaciado más ajustado */
+        width: 90%; /* Ocupa el 90% del contenedor */
+        max-width: 300px; /* Máximo ancho para pantallas grandes */
+    }
+    
+    /* Mejorar feedback táctil */
+    .submit-btn:active {
+        transform: scale(0.98);
+        background-color: #ff0d25;
+    }
+   
+    
+  
+    
+    
+    .custom-list {
+        padding-left: 30px; /* Reduce el padding izquierdo */
+        
+    }
+    
+    .custom-list li {
+        
+        padding-left: 25px; /* Reduce el espacio para el icono */
+        margin-bottom: 30px; /* Menos espacio entre ítems */
+        font-size: 17px; /* Tamaño de fuente más adecuado */
+        line-height: 1.5; /* Interlineado más compacto */
+        text-align: left; /* Mejor legibilidad que justificado */
+    }
+    
+    .custom-list li::before {
+        
+        width: 16px; /* Icono más pequeño */
+        height: 40px; /* Altura reducida */
+        background-size: 16px; /* Ajusta el tamaño del SVG */
+    }
+    
+}
+
+            
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="custom-banner-container">
+        <!-- Banner con imagen -->
+        <div class="banner">
+            <img src="https://i.ibb.co/Y73ssNMf/ASESORIAS-1-1.png" alt="Banner asesorías 1.1" border="0">
+        </div>
+        
+        <!-- Contenido principal -->
+        <section class="elementor-section">
+        <div class="content">
+            <p style="margin-left: 30px; margin-right: 30px;">Si tenés un proyecto en mente y necesitás un espacio de intercambio para empezar, continuar o terminarlo, estas asesorías están pensadas para vos.</p>
+            <p style="margin-left: 30px; margin-right: 30px;">Podemos trabajar juntxs en lo que necesites: ideas, estructura, edición, planificación, herramientas o simplemente destrabar algo que no te deja avanzar. Te acompaño a tu ritmo, pero con ejercicios y propuestas que te ayuden a moverte del lugar en el que estás.</p>
+            <p style="margin-left: 30px; margin-right: 30px;">Las clases son personalizadas, semanales o quincenales (a coordinar), y pueden incluir acompañamiento técnico, creativo, material teórico-práctico y seguimiento entre encuentros.</p>
+            <p style="margin-left: 30px; margin-right: 30px;">Es un espacio para probar, errar, ajustar, repensar… pero siempre con la idea de avanzar. También son ideales si querés aprender <em>Premiere Pro</em> desde cero o resolver herramientas específicas para tu proyecto audiovisual.</p>
+            <p style="margin-left: 30px; margin-right: 30px;">La idea es que no estés solx en el proceso: te ayudo, te acompaño y avanzamos juntxs.</p>
+            <p style="margin-left: 30px; margin-right: 30px;">Contame en qué estás y te digo si puedo ayudarte.</p>
+            <p style="margin-left: 30px; margin-right: 30px;">Ejemplos de quién puede necesitar una asesoría:</p>
+            
+            <ul class="custom-list">
+  <li>Si tenés un proyecto audiovisual (videoarte, corto, documental, videoclip) y no sabés por dónde empezar o cómo seguir.</li>
+  <li>Si querés aprender edición de videos desde cero para materializar tus ideas.</li>
+  <li>Si ya editas pero sentís que te falta pulir tu estilo o dominar nuevas herramientas.
+</li>
+<li>Si estás armando un proyecto específico o tu portafolio y necesitás una mirada externa para ordenar el material.
+</li>
+<li>Si te cuesta sostener un proyecto solx, y te vendría bien un espacio de acompañamiento creativo.
+</li>
+<li>Si estás bloqueadx y necesitás destrabar ideas o rutinas de trabajo.
+</li>
+<li>Si querés experimentar con nuevas estéticas, inteligencia artificial o nuevos lenguajes audiovisuales.
+</li>
+</ul>
+
+            <!-- Botón de llamado a la acción -->
+             <a href="https://paraissorecords.academia.red/local/staticpage/view.php?page=Contacto" style="text-decoration: none;">
+             <button type="submit" class="submit-btn">
+                 SOLICITAR ASESORÍA PERSONALIZADA</button></a>
+
+        </div>
+      </section>
+    </div>
+
+
+
+<script>
+// Versión garantizada para Moove
+document.querySelector('.page-header-headings')?.remove();
+document.querySelector('.breadcrumb')?.remove(); // Si también quieres eliminar la ruta de navegación
+</script></body></html>
