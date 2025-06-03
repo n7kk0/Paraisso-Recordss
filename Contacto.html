@@ -55,22 +55,21 @@
             line-height: 1.2;
         }
         
-        /* Contenedor del iframe */
-        .form-container {
-            position: relative;
-            width: 100%;
-            padding-bottom: 140%; /* Proporción para altura responsive */
-            overflow: hidden;
-        }
+     .form-container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh; /* Altura mínima de toda la pantalla */
+    overflow: visible; /* Permite que el contenido se muestre completo */
+}
         
         .form-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
+    position: relative; /* Cambiado de absolute a relative */
+    width: 100%;
+    height: 800px; /* Altura fija generosa */
+    border: none;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch; /* Scroll suave en iOS */
+}
         
         /* Estilos responsivos */
         @media (max-width: 1024px) {
@@ -104,9 +103,23 @@
                 margin-bottom: 20px;
             }
             
-            .form-container {
-                padding-bottom: 160%; /* Más altura en móviles */
-            }
+             .form-container {
+        padding-bottom: 0; /* Elimina el padding que cortaba el contenido */
+        height: auto;
+    }
+    
+    .form-container iframe {
+        height: 1000px; /* Altura extra para asegurar que el botón sea visible */
+        min-height: 100vh; /* Ocupa al menos toda la pantalla */
+    }
+    
+    .elementor-section {
+        padding: 15px !important;
+    }
+    
+    .contact-form {
+        padding: 15px !important;
+    }
         }
     </style>
 </head>
@@ -117,7 +130,7 @@
         <div class="contact-form">
             <div class="contact-title">CONTACTO</div>
             <div class="form-container">
-<iframe data-tally-src="https://tally.so/embed/mJxzZr?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="314" frameborder="0" marginheight="0" marginwidth="0" title="Contacto"></iframe>
+<iframe data-tally-src="https://tally.so/embed/mJxzZr?alignLeft=1&amp;hideTitle=1&amp;transparentBackground=1&amp;dynamicHeight=1" loading="lazy" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" title="Contacto" data-tally-embed-widget-initialized="1" src="https://tally.so/embed/mJxzZr?alignLeft=1&amp;hideTitle=1&amp;transparentBackground=1&amp;dynamicHeight=1&amp;originPage=%2Flocal%2Fstaticpage%2Fview.php&amp;page=Contacto" id="iFrameResizer0" style="overflow: auto; height: 472px;" scrolling="yes"></iframe>
 <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>            </div>
         </div>
     </section>
